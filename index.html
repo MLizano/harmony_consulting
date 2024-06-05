@@ -12,28 +12,28 @@
 
      <header>
           <img src="./images/logo_white.png" class="logo" alt="logo">
-          <input type="checkbox" id="menu">
+          <input type="checkbox" id="menu" onclick="clickItem()">
           <label for="menu">
-               <img src="./svg/menu_white.svg" class="menu-icon">
+               <img src="./svg/menu_white.svg" class="menu-icon" onclick="clickItem()">
           </label>
-          <ul class="menu">
-               <a href="#banner">
+          <ul id="menu_items"" class="menu">
+               <a class="ref" href="#banner" onclick="toggle()">
                     <li class="item">Inicio</li>
                </a>
                
-               <a href="#we_are">
+               <a class="ref" href="#we_are" onclick="toggle()">
                     <li class="item">Somos</li>
                </a>
 
-               <a href="#services">
+               <a class="ref" href="#services" onclick="toggle()">
                     <li class="item">Servicios</li>
                </a>
 
-               <a href="#contact_us">
+               <a class="ref" href="#contact_us" onclick="toggle()">
                     <li class="item">Contactenos</li>
                </a>
 
-               <a href="#footer">
+               <a class="ref" href="#footer" onclick="toggle()">
                     <li class="item">Redes Sociales</li>
                </a>
           </ul>
@@ -54,10 +54,9 @@
 
      <section id="we_are">
           <h2>SOMOS</h2>
-          <div class="container_left">
-               <img src="./images/happy_girl.png">
-          </div>
-          <div class="container_right">
+          
+          <div class="container_up">
+               <img class="logo" src="./images/icon_color.png" alt="harmony_logo">
                <img src="./svg/quotes.svg" class="quote1">
                <div class="we_are_text">
                     <p>
@@ -68,6 +67,9 @@
                     </p>
                </div>
                <img src="./svg/quotes.svg" class="quote2">
+          </div>
+          <div class="container_down">
+               <img src="./images/happy_girl.png">
           </div>
      </section>
 
@@ -159,7 +161,7 @@
                     <p>soñadores."</p>
                </div>
                <div class="footer_section">
-                    <h3>Contáctenos</h3>
+                    <h3>Contáctanos, haz clic!</h3>
                     <div>
                          <a href="mailto:reclutamiento@harmonyconsulting.cr">reclutamiento@harmonyconsulting.cr</a>
                     </div>
@@ -199,9 +201,30 @@
 
      <script>
           window.addEventListener("scroll", function(){
-              var header = document.querySelector("header");
+              const header = document.querySelector("header");
               header.classList.toggle("down", window.scrollY > 0);
           })
+
+
+          function clickItem(){
+               const menu = document.getElementById('menu'),
+               menuItems = document.getElementById('menu_items');
+
+               menu.addEventListener("click", function(){
+                    menuItems.classList.toggle("active");
+               })
+          }
+
+          function toggle(){
+               const ref = document.querySelectorAll('.ref');
+               const menuItems = document.getElementById('menu_items');
+
+               for (var i = 0 ; i < ref.length; i++) {
+                    ref[i].addEventListener("click", function(){
+                    menuItems.classList.remove("active");
+               })
+               }
+          }
       </script>
      
 </body>
