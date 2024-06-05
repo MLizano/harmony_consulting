@@ -1,657 +1,519 @@
 
-* {
+*{
      margin: 0;
      padding: 0;
+     list-style: none;
+     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
 
-body{
-     max-width: 1902px;
+body {
+     max-width: 1920px;
      margin: auto;
 }
 
 header{
      width: 100%;
-     max-width: 1902px;
-     height: 120px;
-     margin: auto;
-     display: flex;
-     align-items: center;
-     z-index: 10;
      position: fixed;
-     transition: 0.4s;
-}
-
-.header_logo{
-     margin-left: 30px;
-     width: 210px;
-     height: 100%;
-     background-image: url(./images/Main_white@3x.png);
-     background-repeat: no-repeat;
-     background-size: contain;
-     margin-top: 66px;
-     transition: 0.6s;
-}
-
-.menu{
+     top: 0;
+     left: 0;
      display: flex;
-     list-style: none;
-     margin: auto;
-     color: #ffffff;
-     font-size: larger;
-     transition: 0.4s;
-}
-
-.menu a{
-     text-decoration: none;
-}
-
-.menu a:active {
-     color: orangered;
-}
-
-.menu li{
-     margin-left: 50px;
-}
-
-.menu li:hover{
-     cursor: pointer;
-     color: orangered;
-}
-
-.arrow{
-     width: 10px;
-     margin-left: 5px;
-     margin-top: 5px;
-     transform: rotate(90deg);
-     background-image: url(./svg/arrow_white.svg);
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: 0.6s;
-}
-
-.social_media{
-     width: 320px;
-     display: flex;
-     transition: 0.4s;
-}
-
-.social_media a{
-     margin: 0px 15px;
-}
-
-.facebook{
-     width: 25px;
-     height: 25px;
-     margin-left: 20px;
-     background-image: url(./svg/facebook_white.svg);
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: 0.4s;
-}
-
-.instagram{
-     width: 25px;
-     height: 25px;
-     margin-left: 20px;
-     background-image: url(./svg/instagram_white.svg);
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: 0.4s;
-}
-
-.tik-tok{
-     width: 25px;
-     height: 25px;
-     margin-left: 20px;
-     background-image: url(./svg/tik-tok_white.svg);
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: 0.4s;
-}
-
-.linkedin{
-     width: 25px;
-     height: 25px;
-     margin-left: 20px;
-     background-image: url(./svg/linkedin_white.svg);
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: 0.4s;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 5%;
+     height: 50px;
+     transition: 0.3s;
+     z-index: 10;
 }
 
 header.down{
-     background-color: #ffffff;
-     box-shadow: 0px 0px 16px #dddcdc;
-     height: 75px;
+     background-color: rgba(35, 35, 35, 0.90);
+     box-shadow: 0px 0px 16px #434343;
 }
 
-header.down .menu{
-     color: #616161;
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+     text-decoration: none;
+     color: unset;
 }
 
-header.down .header_logo{
-     background-image: url(./images/Main_color@3x.png);
-     transition: 0.4s;
-     margin-top: 35px;
-     width: 180px;
+.logo{
+     height: 40px;
 }
 
-header.down .arrow{
-     background-image: url(./svg/arrow.svg);
+#menu {
+     display: none;
 }
 
-header.down .social_media{
-     width: 300px;
+.menu{
+     padding: 30px;
+     margin: 0;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     background-color: rgb(49 49 49 / 88%);
+     display: none;
 }
 
-header.down .facebook{
-     background-image: url(./svg/facebook.svg);
+.item{
+     margin: 0 15px;
+     font-size: 18px;
+     font-weight: 300;
+     cursor: pointer;
+     color: #ffffff;
+     margin: 0 0 18px 0;
+     width: 100%;
 }
 
-header.down .instagram{
-     background-image: url(./svg/instagram.svg);
+.item:hover{
+     color: orangered;
 }
 
-header.down .tik-tok{
-     background-image: url(./svg/tik-tok.svg);
+.menu-icon{
+     width: 25px;
 }
 
-header.down .linkedin{
-     background-image: url(./svg/linkedin.svg);
+label{
+     display: initial;
 }
+
+#menu:checked ~ .menu{
+     display: initial;
+}
+
+
 
 /* --------------------------------------------------------------------- */
 
 #banner{
-     background-image: url("./images/bussiness-people-working-team-office.jpg");;
+     background-image: url(./images/people-working.jpg);
      background-size: cover;
+     background-repeat: no-repeat;
      width: 100%;
-     height: 1000px;
+     height: 320px;
+     background-position: 20%;
 }
 
-.container{
-     margin-top: 530px;
-     margin-left: 200px;
+.banner{
+     margin-top: 142px;
+     margin-left: 10%;
      display: inline-flex;
-     width: 760px;
+     width: 250px;
+
 }
 
 .banner_text{
      color: #fff;
-     font-size: 38px;
+     font-size: 17px;
 }
 
 .banner_text span{
      color: #00cccc;
-     font-size: 38px;
+     font-size: 19px;
      font-weight: bold;
 }
 
+
 /* --------------------------------------------------------------------- */
 
-#we_are{
-     width: 100%;
-     height: 600px;
-     background-color: #ffffff;
+#we_are {
+     display: inline-block;
+     position: relative;
+     height: 310px;
+
 }
 
 #we_are h2{
-     transform: rotate;
-     transform: rotate(270deg);
-     height: 50px;
-     width: 110px;
-     margin-top: 325px;
-     align-items: center;
-     display: flex;
-     position: absolute;
-     font-size: 60px;
+     margin: 10px auto;
+     width: 100px;
      color: #003366;
      font-weight: normal;
 }
 
-#we_are .container_left{
-     background-image: url(./images/Icon_Color@3x.png);
-     background-repeat: no-repeat;
-     background-size: 450px;
-     width: 50%;
-     height: 100%;
-     background-position-x: center;
-     background-position-y: 100px;
-     float: left;
-}
 #we_are .container_left img{
-     width: 600px;
-     margin-left: 330px;
+     width: 150px;
+     bottom: 0;
+     position: absolute;
+}
+
+#we_are .container_left{
+     background-image: url(./images/icon_color.png);
+     background-repeat: no-repeat;
+     background-size: 140px;
+     width: 40%;
+     height: 100%;
+     background-position-y: center;
+     background-position-x: right;
+
+     float: left;
+     position: absolute;
+     bottom: 0;
 }
 
 #we_are .container_right{
-     width: 40%;
+     width: 60%;
      float: right;
-     margin-top: 155px;
+}
+
+#we_are .container_right p{
+     font-size: 10px;
+     padding: 5px;
+}
+
+#we_are .container_right img{
+     width: 12px;
 }
 
 .we_are_text{
-     width: 500px;
+     width: 70%;
      display: inline-flex;
 }
 
 .we_are_text p{
      color: #616161;
-     text-align: justify;
-     font-size: 18px;
+     font-size: 0.7rem;
 }
 
-.quote1{
-     width: 70px;
-     height: 70px;
-     margin-right: 15px;
-}
 
 .quote2{
-     width: 70px;
-     height: 70px;
      transform: rotate(180deg);
-     margin-left: 548px;
 }
 
 /* --------------------------------------------------------------------- */
 
 #mission_vision{
      width: 100%;
-     height: 400px;
+     height: 375px;
      background-color: rgb(228, 228, 228);
 }
 
+#mission_vision h3{
+     margin: 10px auto;
+     width: 90%;
+     color: #003366;
+     font-weight: normal;
+     display: flex;
+     justify-content: center;
+}
+
 #mission_vision .container_left{
-     width: 450px;
-     padding: 110px;
-     float: left;
-     margin-left: 200px;
+     width: 75%;
+     margin: auto;
+     padding: 18px;
 }
 
 #mission_vision .container_right{
-     width: 450px;
-     padding: 110px;
-     float: right;
-     margin-right: 200px;
-}
-
-#mission_vision h3{
-     font-size: 40px;
-     font-weight: lighter;
-     color: #003366;
+     width: 75%;
+     margin: auto;
+     padding: 18px;
 }
 
 #mission_vision hr{
      border: none;
      height: 1px;
      background-color: #b0b0b0;
-     margin-top: 15px;
-     margin-bottom: 15px;
 }
 
 #mission_vision p{
      color: #003366;
-}
+     text-align: justify;
+     font-size: 0.7rem;
+} 
 
 /* --------------------------------------------------------------------- */
 
 #services{
      background-color: #ffffff;
-     height: 520px;
+     height: 490px;
 }
 
 #services h2{
-     transform: rotate;
-     transform: rotate(270deg);
-     height: 50px;
-     width: 110px;
-     margin-top: 330px;
-     align-items: center;
-     display: flex;
-     position: absolute;
-     font-size: 60px;
+     margin: 10px auto;
+     width: 120px;
      color: #003366;
      font-weight: normal;
 }
 
 .service_container{
-     width: 1260px;
+     width: 90%;
      height: 90%;
      margin: auto;
      display: flex;
-     align-items: center;
-     justify-content: center;
+     flex-wrap: wrap;
+     column-gap: 10px;
 }
 
 .service{
-     margin: 0px 40px;
-     width: 215px;
+     width: 48%;
+     display: grid;
+     justify-content: center;
+     float: left;
+     margin: 0 auto;
 }
 
-#services img{
-     width: 175px;
-     margin: 40px auto;
-     margin-left: 15px;
+.service img{
+     width: 90px;
+     align-self: center;
+    margin: auto;
 }
 
 .service p{
      text-align: center;
      color: #003366;
-     font-size: 19px;
+     font-size: 0.7rem;
 }
-
-/* --------------------------------------------------------------------- */
-
-#info{
-     width: 100%;
-     height: 750px;
-     background-color: #eae9e9;
-     display: flex;
-}
-
-#info .text_container{
-     width: 40%;
-     padding: 150px 0px 0px 95px;
-     margin-right: 80px;
-}
-.images_content{
-     display: flex;
-     padding: 0px;
-     margin: 0px;
-     width: 735px;
-}
-
-.images{
-     width: 50%;
-     padding: 0px;
-     align-content: center;
-     margin: 0;
-}
-
-#info p{
-     color: #616161;
-     font-size: 19px;
-     text-align: justify;
-     margin-top: 30px;
-}
-
-.img1{
-     width: 230;
-     border-radius: 25px 0px 0px;
-}
-
-.img2{
-     width: 230;
-     border-radius: 0px 25px 0px 0px;
-}
-
-.img3{
-     width: 230;
-     border-radius: 0px 0px 0px 25px;
-}
-
-.img4{
-     width: 230;
-     border-radius: 0px 0px 25px;
-}
-
-/* --------------------------------------------------------------------- */
-
-#video video{
-     width: 100%;
-     height: 800px;
-}
-
-/* --------------------------------------------------------------------- */
-
-#team{
-     width: 100%;
-     height: 600px;
-     background-color: #ffffff;
-}
-
-#team h2{
-     transform: rotate;
-     transform: rotate(270deg);
-     height: 50px;
-     width: 110px;
-     margin-top: 330px;
-     align-items: center;
-     display: flex;
-     position: absolute;
-     font-size: 60px;
-     color: #003366;
-     font-weight: normal;
-}
-
-.team_container{
-     width: 80%;
-     height: 500px;
-     margin: auto;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.circle{
-     background-color: #003366;
-     width: 200px;
-     height: 200px;
-     border-radius: 50%;
-     margin-bottom: 30px;
-}
-
-.member{
-     text-align: center;
-     height: 300px;
-     margin: 125px 100px 0px 100px;
-}
-
-.member img{
-     position: absolute;
-     border-radius: 0px 0px 110px 110px;
-     display: inline;
-     margin-left: -104px;
-     margin-top: -92px;
-}
-
-.member h3, h4{
-     font-weight: normal;
-     color: #003366;
-}
-
-
 
 /* --------------------------------------------------------------------- */
 
 #contact_us{
      width: 100%;
-     height: 600px;
+     height: 410px;
      background-color: #eae9e9;
+     padding: 6px;
 }
 
+
 #contact_us h2{
-     transform: rotate;
-     transform: rotate(270deg);
-     height: 50px;
-     width: 110px;
-     margin-top: 445px;
-     align-items: center;
-     display: flex;
-     position: absolute;
-     font-size: 60px;
+     margin: 10px auto;
+     width: 176px;
      color: orangered;
      font-weight: normal;
 }
 
 #contact_us form{
-     width: 55%;
+     width: 86%;
      height: 400px;
      margin: auto;
 }
 
-#contact_us .data{
-     height: 30px;
+.form_inputs{
+     height: 170px;
+}
+
+#contact_us input{
+     font-size: 0.7rem;
      padding-left: 10px;
      border-style: double;
-     margin-top: 7px;
+     border-color: #cdcdcd;
+     border-radius: 3px;
+     width: 100%;
+     height: 27px;
 }
 
-#contact_us textarea{
-     padding-left: 10px;
-     border-style: double;
-     margin-top: 10px;
+#contact_us .button{
+     background-color: #0033cc;
+     color: #fff;
+     height: 34px;
+     margin-top: 15px;
+     border-radius: 6px;
 }
 
-.form_left{
-     width: 50%;
-     height: 100%;
-     float: left;
-     align-content: center;
-     justify-content: center;
-     display: grid;
-}
-
-.form_right{
-     width: 50%;
-     height: 100%;
-     float: right;
-     align-content: center;
-     justify-content: center;
-     display: grid;
-}
-
-label{
-     font-size: 19px;
-     color: #0033cc;
+#contact_us .button:hover{
+     background-color: #012695;
 }
 
 #contact_us p{
      color: #0033cc;
      display: flex;
-     width: 740px;
+     width: 100%;
      text-align: center;
+     margin: auto;
+     font-size: 0.8rem;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+footer{
+     width: 100%;
+     height: 175px;
+     background-color: #ffffff;
+     color: #616161;font-size: 0.6rem;
+     padding: 15px;
+     border-top: 1px solid #bdbdbd;
+}
+
+.footer_container{
+     display: grid;
+     grid-template-columns: 30% 70%;
+     gap: 20px;
+
+}
+
+.footer_section{
+     text-align: left;
+     width: 100%;
      margin: auto;
 }
 
-.button{
-     width: 325px;
-     background-color: #0033cc;
-     color: #fff;
-     height: 38px;
-     padding: 0px;
-     border: none;
+.footer_section p {
+     font-size: 0.8rem;
+     color: #00cccc;
+}
+
+.footer_social{
+     grid-column-start: 1;
+     grid-column-end: 3;
+     display: grid;
+     grid-template-columns: repeat(4, 22%);
+}
+
+.footer_social a{
      margin: auto;
-     margin-top: 40px;
-     display: block;
+}
+
+.footer_social img{
+     width: 20px;
+}
+
+.end_of_line{
+     margin: auto;
+     width: 100%;
+     justify-content: center;
+     display: flex;
+     margin-top: 15px;
+     font-style: italic;
+     color: cadetblue;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+@media screen and (min-width:420px){
 }
 
 
 /* --------------------------------------------------------------------- */
+@media screen and (min-width:610px){
+     #banner{
+          height: 450px;
+          background-position: 20%;
+     }
 
-footer{
-     width: 100%;
-     height: 360px;
-     background-color: #ffffff;
-     display: flex;
-     justify-content: center;
-     color: #616161;
+     .banner{
+          margin-top: 240px;
+          width: 330px;
+     }
+
+     .banner_text{
+          font-size: 22px;
+     }
+     
+     .banner_text span{
+          font-size: 26px;
+     }
 }
 
-.footer_container{
-     display: flex;
-     justify-content: center;
-     margin-top: 80px;
-     height: 226px;
+/* --------------------------------------------------------------------- */
+@media screen and (min-width:900px){
+
+     header{
+          height: 90px;
+     }
+
+     label{
+          cursor: pointer;
+          display: none;
+     }
+
+     .menu{
+          display: flex;
+          position: initial;
+          background-color: transparent;
+     }
+
+     .item{
+          margin: 0px 25px;
+     }
+
+     #banner{
+          height: 800px;
+          background-position: 20%;
+     }
+
+     .banner{
+          margin-top: 375px;
+          width: 608px;
+     }
+
+     .banner_text{
+          font-size: 30px;
+     }
+     
+     .banner_text span{
+          font-size: 38px;
+     }
+
+     /* --------------------------------------------------------------------- */
+     #we_are{
+          width: 100%;
+          height: 500px;
+          background-color: #ffffff;
+     }
+     
+     #we_are h2{
+          height: 45px;
+          margin-top: 20px;
+          font-size: 30px;
+     }
+     
+     #we_are .container_left{
+          background-image: url(./images/icon_color.png);
+          background-repeat: no-repeat;
+          background-size: 450px;
+          width: 50%;
+          height: 100%;
+          background-position-x: center;
+          background-position-y: 100px;
+          float: left;
+     }
+     
+     #we_are .container_left img{
+          width: 600px;
+          margin-left: 330px;
+     }
+     
+     #we_are .container_right{
+          width: 40%;
+          float: right;
+          margin-top: 155px;
+     }
+     
+    
+
 }
 
-.footer_sections {
-     width: 30%;
+/* --------------------------------------------------------------------- */
+@media (min-width:1132px) {
+     header{
+          height: 90px;
+     }
+
+     .logo{
+          height: 70px;
+     }
+
+     .item{
+          font-size: 22px;
+     }
 }
 
-.footer_sections p{
-     font-size: 20px;
-     color: #00cccc;
-     margin-top: 10px;
-}
 
-.second_text{
-     margin-left: 90px;
-}
 
-footer ul{
-     list-style-type: none;
-     width: 145px;
-}
 
-footer li:hover{
-     color: orangered;
-     cursor: pointer;
-}
 
-footer h3{
-     margin-bottom: 18px;
-}
 
-footer span{
-     display: contents;
-     margin-top: 8px;
-}
 
-footer img {
-     width: 10px;
-     margin-top: 8px;
-     background-image: url(./svg/arrow.svg);
-     float: left;
-     margin-right: 20px;
-}
 
-footer .end{
-     height: 58px;
-     width: 400px;
-     margin-top: 10px;
-}
 
-footer hr{
-     border: none;
-     height: 1px;
-     background-color: #b0b0b0;
-     margin-top: 15px;
-     margin-bottom: 15px;
-}
 
-.footer_social{
-     margin-top: 38px;
-     display: flex;
-}
 
-.footer_social a{
-     margin: 0px 18px 0px 0px;
-}
 
-.footer_sections .footer_social .facebook{
-     width: 25px;
-     height: 25px;
-     margin-left: 0px;
-     background-image: url(./svg/facebook.svg);
-}
 
-.footer_sections .footer_social .instagram{
-     width: 25px;
-     height: 25px;
-     background-image: url(./svg/instagram.svg);
-}
-
-.footer_sections .footer_social .tik-tok{
-     width: 25px;
-     height: 25px;
-     background-image: url(./svg/tik-tok.svg);
-}
-
-.footer_sections .footer_social .linkedin{
-     width: 25px;
-     height: 25px;
-     background-image: url(./svg/linkedin.svg);
-}
