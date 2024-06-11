@@ -134,7 +134,7 @@ label{
      margin: 10px auto;
      width: 100px;
      color: #003366;
-     font-weight: normal;
+     font-weight: bold;
 }
 
 #we_are .container_up{
@@ -187,44 +187,56 @@ label{
 /* --------------------------------------------------------------------- */
 
 #mission_vision{
+     border-top: 10px solid #065fb9;
+     border-bottom: 10px solid #ff8000;
+}
+
+#mission{
+     background-image: url(./images/mision_vision.png);
+     background-size: 595px;
+     background-position-x: 30px;
+     background-position-y: -40px;
+     background-repeat: no-repeat;
+     width: 270px;
+     height: 200px;
+     margin: auto;
+}
+
+#vision{
+     background-image: url(./images/mision_vision.png);
+     background-size: 595px;
+     background-position-x: right;
+     background-position-y: -100px;
+     background-repeat: no-repeat;
+     width: 325px;
+     height: 180px;
+     margin: auto;
+}
+
+/* --------------------------------------------------------------------- */
+
+#nuestra_filosofia{
+     height: 270px;
+     padding-top: 35px;
+     border-bottom: 10px solid #59c3db;
+}
+
+#nuestra_filosofia div{
+     background-image: url(./images/nuestra_filosofia.png);
+     background-size: 350px;
+     background-position-x: -10px;
+     background-repeat: no-repeat;
      width: 100%;
-     height: 500px;
-     background-color: rgb(228, 228, 228);
-     padding: 45px 0;
+     height: 195px;
+     padding: 70px 20px 0px 20px;
 }
 
-#mission_vision h3{
-     margin: 10px auto;
-     width: 90%;
-     color: #003366;
-     font-weight: normal;
+/* --------------------------------------------------------------------- */
+
+#video{
      display: flex;
-     justify-content: center;
 }
 
-#mission_vision .container_left{
-     width: 75%;
-     margin: auto;
-     padding: 20px 0;
-}
-
-#mission_vision .container_right{
-     width: 75%;
-     margin: auto;
-     padding: 20px 0;
-}
-
-#mission_vision hr{
-     border: none;
-     height: 1px;
-     background-color: #b0b0b0;
-}
-
-#mission_vision p{
-     color: #003366;
-     text-align: justify;
-     font-size: 0.8rem;
-} 
 
 /* --------------------------------------------------------------------- */
 
@@ -237,7 +249,7 @@ label{
      margin: 10px auto;
      width: 120px;
      color: #003366;
-     font-weight: normal;
+     font-weight: bold;
 }
 
 .service_container{
@@ -260,13 +272,24 @@ label{
 .service img{
      width: 90px;
      align-self: center;
-    margin: auto;
+     margin: auto;
 }
 
 .service p{
      text-align: center;
      color: #003366;
      font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------- */
+
+#porque_confiar{
+     background-image: url(./images/porque_confiar.png);
+     background-size: 435px;
+     background-position-x: -100px;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 244px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -283,7 +306,7 @@ label{
      margin: 10px auto;
      width: 176px;
      color: orangered;
-     font-weight: normal;
+     font-weight: bold;
 }
 
 #contact_us form{
