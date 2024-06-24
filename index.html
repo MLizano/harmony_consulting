@@ -148,7 +148,7 @@
           <h4 class="comercial">Comercial</h4>
 
           <!-- comercial -->
-          <form action="">
+          <form action="" class="contact_form">
                <div class="form_inputs">
                     <div>
                          <input class="data" type="text" id="name" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
@@ -159,11 +159,12 @@
                          oninput="this.setCustomValidity('')"/>
                     </div>
                     <div style="margin-top: 25px;">
-                         <input class="data" type="tel" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
-                         oninput="this.setCustomValidity('')"/>
+                         <input class="data" type="text" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
+                         oninput="this.setCustomValidity('')" onkeydown="return just_number(event)"/>
                     </div>
                </div>
                <input type="submit" value="ENVIAR" class="button">
+               
           </form>
      </section>
 
@@ -176,7 +177,7 @@
           <h4 class="reclutamiento">Reclutamiento</h4>
           
           <!-- reclutamiento -->
-          <form action="">
+          <form action="" class="contact_form">
                <div class="form_inputs">
                     <div>
                          <input class="data" type="text" id="name" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
@@ -188,7 +189,7 @@
                     </div>
                     <div style="margin-top: 25px;">
                          <input class="data" type="tel" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
-                         oninput="this.setCustomValidity('')"/>
+                         oninput="this.setCustomValidity('')" onkeydown="return just_number(event)"/>
                     </div>
                </div>
                <input type="submit" value="ENVIAR" class="button">
@@ -247,6 +248,22 @@
               header.classList.toggle("down", window.scrollY > 0);
           })
 
+          const form = document.querySelector(".contact_form");
+
+          form.addEventListener("submit", function(e){
+               e.preventDefault();
+               console.log(e);
+          })
+
+          function just_number(e){
+               var key = e.keyCode;
+               
+               if(key > 47 && key < 58){
+                    return true;
+               }else{
+                    return false;
+               }
+          }
 
           function clickItem(){
                const menu = document.getElementById('menu'),

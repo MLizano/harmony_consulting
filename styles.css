@@ -7,6 +7,14 @@
      font-family: "Poppins", sans-serif;
 }
 
+html{
+     scroll-snap-type: y mandatory;
+}
+
+section{
+     scroll-snap-align: center;
+}
+
 body {
      max-width: 1920px;
      margin: auto;
@@ -16,7 +24,7 @@ header{
      width: 100%;
      position: fixed;
      top: 0;
-     left: 0;
+     /* left: 0; */
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -542,6 +550,10 @@ footer{
           width: 100%;
       }
 
+      #vision{
+          display: none;
+     }
+
       /* --------------------------------------------------------------------- */
 
      #nuestra_filosofia{
@@ -686,15 +698,16 @@ footer{
 
      .item{
           margin: 0px 25px;
+          font-size: 0.95rem;
      }
 
      #banner{
-          height: 800px;
-          background-position: 20%;
+          height: 1000px;
+          background-position: 32%;
      }
 
      .banner{
-          margin-top: 375px;
+          margin-top: 550px;
           width: 608px;
      }
 
@@ -706,42 +719,146 @@ footer{
           font-size: 38px;
      }
 
+     
      /* --------------------------------------------------------------------- */
      #we_are{
-          width: 100%;
-          height: 500px;
-          background-color: #ffffff;
+          height: 800px;
      }
      
      #we_are h2{
+          margin-top: 30px;
+     }
+     
+     #we_are .container_down{
+          justify-content: center;
+          display: flex;
+     }
+
+     #we_are .container_down img{
+          width: 60%;
+     }
+
+     #we_are .container_up p {
+          font-size: 1.2rem;
+     }
+     
+     .quote1, .quote2{
+          width: 32px;
+     }
+
+     /* --------------------------------------------------------------------- */
+
+     #mission{
+          background-size: 880px;
+          background-position-x: 8px;
+          height: 545px;
+     }
+
+     /* --------------------------------------------------------------------- */
+
+     #nuestra_filosofia {
+          height: 545px;
+     }
+
+     #nuestra_filosofia div {
+          background-size: 740px;
+          background-position-x: 70px;
+     }
+
+     /* --------------------------------------------------------------------- */
+
+     #services{
+          height: 700px;
+     }
+
+     #services h2{
+          width: 210px;
+          font-size: 2.5rem;
+          margin-top: 30px;
+     }
+
+     .service p{
+          font-size: 1.6rem;
+     }
+
+     /* --------------------------------------------------------------------- */
+
+     #porque_confiar {
+          background-size: 1155px;
+          background-position-x: -238px;
+          background-position-y: -35px;
+          height: 614px;
+      }
+
+     /* --------------------------------------------------------------------- */
+
+     .contact1 {
+          height: 630px;
+     }
+
+     #contact_us .privacy_info{
+          font-size: 1rem;
+     }
+
+     #contact_us p{
+          font-size: 1.2rem;
+          display:block;
+     }
+     
+     .form_inputs{
+          height: 212px;
+     }
+     
+     #contact_us input {
+          font-size: 1.1rem;
+          height: 42px;
+     }
+
+     #contact_us .button{
           height: 45px;
-          margin-top: 20px;
-          font-size: 30px;
      }
-     
-     #we_are .container_left{
-          background-image: url(./images/icon_color.png);
-          background-repeat: no-repeat;
-          background-size: 450px;
-          width: 50%;
-          height: 100%;
-          background-position-x: center;
-          background-position-y: 100px;
-          float: left;
+
+     /* --------------------------------------------------------------------- */
+
+     #icon{
+          width: 100%;
+          justify-content: center;
      }
-     
-     #we_are .container_left img{
-          width: 600px;
-          margin-left: 330px;
+
+     #icon img{
+          width: 145px;
+
      }
-     
-     #we_are .container_right{
-          width: 40%;
-          float: right;
-          margin-top: 155px;
+
+     #footer{
+          height: 400px;
      }
-     
-    
+
+     .footer_container{
+          grid-template-columns: 40% 60%;
+     }
+
+     .footer_section{
+          margin-bottom: 55px;
+     }
+
+     .footer_section h3{
+          font-size: 1rem;
+     }
+
+     .footer_section div {
+          margin-top: 15px;
+          font-size: 1rem;
+      }
+
+     .footer_social img {
+          width: 50px;
+      }
+
+      .end_of_line{
+          margin-top: 40px;
+          font-size: 1.2rem;
+      }
 
 }
 
@@ -756,19 +873,261 @@ footer{
      }
 
      .item{
-          font-size: 22px;
+          font-size: 1.2rem;
      }
+
+     /* --------------------------------------------------------------------- */
+
+     #we_are {
+          height: 890px;
+      }
+
+      #we_are .container_up .logo {
+          width: 500px;
+          height: 500px;
+          margin-left: -300px;
+      }
+
+      #we_are .container_down img {
+          width: 60%;
+          margin-right: -260px;
+      }
+
+     /* --------------------------------------------------------------------- */
+
+     #mission {
+          background-size: 1090px;
+          background-position-x: 18px;
+          background-position-y: 48px;
+          height: 700px;
+     }
+
+     /* --------------------------------------------------------------------- */
+
+     #nuestra_filosofia {
+          height: 650px;
+      }
+
+      #nuestra_filosofia div {
+          background-size: 910px;
+          background-position-x: 106px;
+          background-position-y: 40px;
+      }
+
+     /* --------------------------------------------------------------------- */
+
+     #porque_confiar {
+          background-size: 1358px;
+          background-position-x: -290px;
+          background-position-y: -43px;
+          height: 720px;
+      }
+
+     /* --------------------------------------------------------------------- */
+
+      #contact_us .privacy_info {
+          font-size: 1.2rem;
+      }
+
+      #contact_us p {
+          font-size: 1.4rem;
+      }
+
+      .form_inputs {
+          height: 255px;
+      }
+
+      #contact_us input {
+          font-size: 1.3rem;
+          height: 50px;
+      }
+
+      .contact1 {
+          height: 720px;
+      }
+
+      .contact2{
+          height: 545px;
+      }
+
+      #contact_us .button {
+          height: 52px;
+      }
+
+     /* --------------------------------------------------------------------- */
+
+     #footer {
+          height: 465px;
+      }
+
+      .footer_section div {
+          margin-top: 20px;
+          font-size: 1.3rem;
+      }
 }
 
 
+@media (min-width: 1132px) {
+    .item {
+        font-size: 1.5rem;
+    }
 
+     /* --------------------------------------------------------------------- */
 
+     .banner {
+          margin-top: 545px;
+     }
 
+     #we_are {
+          height: 930px;
+      }
 
+      #we_are .container_down img {
+          width: 45%;
+      }
 
+      .we_are_text {
+          width: 70%;
+      }
 
+      #we_are .container_up p {
+          font-size: 1.4rem;
+      }
 
+      #we_are .container_up img {
+          width: 55px;
+      }
 
+      #mission {
+          background-size: 1210px;
+          background-position-x: 38px;
+          background-position-y: 18px;
+      }
 
+      #nuestra_filosofia {
+          height: 690px;
+      }
 
+      #nuestra_filosofia div {
+          background-size: 975px;
+          background-position-x: 180px;
+      }
+
+      .service{
+          width: 100%;
+      }
+
+      .service p {
+          font-size: 1.4rem;
+      }
+
+      .service_container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          height: 290px;
+      }
+
+      #services {
+          height: 450px;
+      }
+
+      #porque_confiar {
+          background-position-x: -8px;
+          background-position-y: 0px;
+          height: 764px;
+      }
+
+      .footer_social {
+          grid-template-columns: repeat(4, 25%);
+          width: 490px;
+          margin: auto;
+      }
+}
+
+@media (min-width: 1900px) {
+
+     header{
+          max-width: 1920px;
+     }
+
+     #we_are .container_down img {
+          width: 38%;
+      }
+
+      #mission {
+          background-size: 1300px;
+          background-position: center;
+          height: 775px;
+      }
+
+      #nuestra_filosofia {
+          height: 760px;
+      }
+
+      #nuestra_filosofia div {
+          background-size: 1050px;
+          background-position: center;
+      }
+
+      #services {
+          height: 530px;
+      }
+
+      #services h2 {
+          margin-top: 60px;
+          margin-bottom: 60px;
+      }
+
+      .service img {
+          width: 125px;
+      }
+
+      #porque_confiar {
+          background-size: 1600px;
+          background-position: center;
+          height: 900px;
+      }
+
+      #contact_us form {
+          width: 55%;
+      }
+
+      #footer {
+          height: 465px;
+          align-content: center;
+          justify-content: center;
+          display: grid;
+      }
+
+      .footer_container {
+          grid-template-columns: 50% 50%;
+          width: 990px;
+      }
+
+}
+
+#popover{
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 0.25rem;
+     box-shadow: 0 0.5rem 1rem black;
+     color: black;
+     font-size: 1rem;
+     max-width: 300px;
+     padding: 1rem;
+     position: fixed;
+     top: 50%;
+     left: 45%;
+     z-index: 1000;
+}
+
+#popover::backdrop{
+     backdrop-filter: blur(3px);
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     z-index: 999;
+}
 
