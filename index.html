@@ -133,7 +133,7 @@
 
      <!-- ------------------------------------------------------------------------------------------ -->
 
-    <section id="contact_us" style="background-color: white;">
+    <section id="contact_us" class="contact1">
           <h2>CONTACTENOS</h2>
           <p class="privacy_info">
                La información brindada no será expuesta a terceros, 
@@ -145,7 +145,7 @@
                Si desea recibir información sobre los servicios que ofrecemos, escriba al correo comercial:
           </p>
 
-          <h4>Comercial</h4>
+          <h4 class="comercial">Comercial</h4>
 
           <!-- comercial -->
           <form action="">
@@ -167,13 +167,13 @@
           </form>
      </section>
 
-     <section id="contact_us" style="height: 360px;">
+     <section id="contact_us" class="contact2">
 
           <p>
                Si desea recibir información sobre nuestros puestos, escriba a reclutamiento:
           </p>
 
-          <h4>Reclutamiento</h4>
+          <h4 class="reclutamiento">Reclutamiento</h4>
           
           <!-- reclutamiento -->
           <form action="">
@@ -200,9 +200,8 @@
      <footer id="footer">
           <div class="footer_container">
                
-               <div class="footer_section">
-                    <p>"Somos visionarios...</p>
-                    <p>soñadores."</p>
+               <div id="icon" class="footer_section">
+                    <img src="./images/icon_color.png" alt="">
                </div>
                <div class="footer_section">
                     <h3>Contáctanos, haz clic!</h3>
@@ -238,10 +237,9 @@
      </footer>
      
 
-
-
-
-
+     <!-- ------------------------------------------------------------------------------------------ -->
+     <!-- ------------------------------------------------------------------------------------------ -->
+     <!-- ------------------------------------------------------------------------------------------ -->
 
      <script>
           window.addEventListener("scroll", function(){
@@ -260,14 +258,9 @@
           }
 
           function toggle(){
-               const ref = document.querySelectorAll('.ref');
                const menuItems = document.getElementById('menu_items');
 
-               for (var i = 0 ; i < ref.length; i++) {
-                    ref[i].addEventListener("click", function(){
-                    menuItems.classList.remove("active");
-               })
-               }
+               menuItems.classList.remove("active");
           }
       </script>
      
