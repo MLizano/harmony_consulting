@@ -133,8 +133,21 @@
 
      <!-- ------------------------------------------------------------------------------------------ -->
 
-    <section id="contact_us">
+    <section id="contact_us" style="background-color: white;">
           <h2>CONTACTENOS</h2>
+          <p class="privacy_info">
+               La información brindada no será expuesta a terceros, 
+               es solo para uso exclusivo interno de Harmony Consulting.
+          </p>
+          <br>
+
+          <p>
+               Si desea recibir información sobre los servicios que ofrecemos, escriba al correo comercial:
+          </p>
+
+          <h4>Comercial</h4>
+
+          <!-- comercial -->
           <form action="">
                <div class="form_inputs">
                     <div>
@@ -150,10 +163,34 @@
                          oninput="this.setCustomValidity('')"/>
                     </div>
                </div>
-               <p>
-                    La información brindada no será expuesta a terceros, 
-                    es solo para uso exclusivo interno de Harmony Consulting.
-               </p>
+               <input type="submit" value="ENVIAR" class="button">
+          </form>
+     </section>
+
+     <section id="contact_us" style="height: 360px;">
+
+          <p>
+               Si desea recibir información sobre nuestros puestos, escriba a reclutamiento:
+          </p>
+
+          <h4>Reclutamiento</h4>
+          
+          <!-- reclutamiento -->
+          <form action="">
+               <div class="form_inputs">
+                    <div>
+                         <input class="data" type="text" id="name" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
+                         oninput="this.setCustomValidity('')"/>
+                    </div>
+                    <div style="margin-top: 25px;">
+                         <input class="data" type="email" id="email" placeholder="Correo" size="35" required oninvalid="this.setCustomValidity('Su correo es requerido')"
+                         oninput="this.setCustomValidity('')"/>
+                    </div>
+                    <div style="margin-top: 25px;">
+                         <input class="data" type="tel" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
+                         oninput="this.setCustomValidity('')"/>
+                    </div>
+               </div>
                <input type="submit" value="ENVIAR" class="button">
           </form>
      </section>

@@ -296,9 +296,10 @@ label{
 
 #contact_us{
      width: 100%;
-     height: 500px;
+     height: 470px;
      background-color: #eae9e9;
      padding: 20px 6px;
+     border-top: 1px solid #d9d9d9;
 }
 
 
@@ -309,15 +310,23 @@ label{
      font-weight: bold;
 }
 
+#contact_us h4{
+     margin: auto;
+     width: 88px;
+     color: #0033cc;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
 #contact_us form{
      width: 86%;
      height: 400px;
-     margin: 30px auto;
-
+     margin: auto;
+     margin-top: 10px;
 }
 
 .form_inputs{
-     height: 170px;
+     height: 155px;
 }
 
 #contact_us input{
@@ -334,12 +343,16 @@ label{
      background-color: #0033cc;
      color: #fff;
      height: 34px;
-     margin-top: 15px;
      border-radius: 6px;
 }
 
 #contact_us .button:hover{
      background-color: #012695;
+}
+
+#contact_us .privacy_info{
+     color: #949494;
+     font-size: 0.7rem;
 }
 
 #contact_us p{
