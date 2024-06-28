@@ -148,22 +148,24 @@
           <h4 class="comercial">Comercial</h4>
 
           <!-- comercial -->
-          <form action="" class="contact_form">
+          <form action="https://formsubmit.co/cb9374d6013947fad28450ac87356d25" method="POST" class="contact_form"/>
                <div class="form_inputs">
                     <div>
-                         <input class="data" type="text" id="name" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
+                         <input class="data" type="text" id="name" name="Nombre" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
                          oninput="this.setCustomValidity('')"/>
                     </div>
                     <div style="margin-top: 25px;">
-                         <input class="data" type="email" id="email" placeholder="Correo" size="35" required oninvalid="this.setCustomValidity('Su correo es requerido')"
+                         <input class="data" type="email" id="email" name="Correo" placeholder="Correo" size="35" required oninvalid="this.setCustomValidity('Su correo es requerido')"
                          oninput="this.setCustomValidity('')"/>
                     </div>
                     <div style="margin-top: 25px;">
-                         <input class="data" type="text" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
+                         <input class="data" type="text" id="phone" name="Teléfono" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
                          oninput="this.setCustomValidity('')" onkeydown="return just_number(event)"/>
                     </div>
                </div>
                <input type="submit" value="ENVIAR" class="button">
+               <input type="hidden" name="_next" value="http://www.harmonyconsulting.cr//mail_request.html">
+               <input type="hidden" name="_captcha" value="false">
                
           </form>
      </section>
@@ -177,22 +179,24 @@
           <h4 class="reclutamiento">Reclutamiento</h4>
           
           <!-- reclutamiento -->
-          <form action="" class="contact_form">
+          <form action="https://formsubmit.co/947df57ec5643b46a9a5e9ba06075db3" method="POST" class="contact_form"/>
                <div class="form_inputs">
                     <div>
-                         <input class="data" type="text" id="name" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
+                         <input class="data" type="text" id="name" name="Nombre" placeholder="Nombre" size="35" required oninvalid="this.setCustomValidity('Su nombre completo es requerido')"
                          oninput="this.setCustomValidity('')"/>
                     </div>
                     <div style="margin-top: 25px;">
-                         <input class="data" type="email" id="email" placeholder="Correo" size="35" required oninvalid="this.setCustomValidity('Su correo es requerido')"
+                         <input class="data" type="email" id="email" name="Correo" placeholder="Correo" size="35" required oninvalid="this.setCustomValidity('Su correo es requerido')"
                          oninput="this.setCustomValidity('')"/>
                     </div>
                     <div style="margin-top: 25px;">
-                         <input class="data" type="tel" id="phone" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
+                         <input class="data" type="tel" id="phone" name="Teléfono" placeholder="Teléfono" size="35" required oninvalid="this.setCustomValidity('Su telefono es requerido')"
                          oninput="this.setCustomValidity('')" onkeydown="return just_number(event)"/>
                     </div>
                </div>
                <input type="submit" value="ENVIAR" class="button">
+               <input type="hidden" name="_next" value="http://www.harmonyconsulting.cr//mail_request.html">
+               <input type="hidden" name="_captcha" value="false">
           </form>
      </section>
 
@@ -217,13 +221,13 @@
                     </div>
                </div>
                <div class="footer_social">
-                    <a href="https://www.facebook.com" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=61559582820052" target="_blank">
                          <img src="svg/facebook.svg" alt="facebook">
                     </a>
-                    <a href="https://www.instagram.com" target="_blank">
+                    <a href="https://www.instagram.com/harmonyconsulting.cr" target="_blank">
                          <img src="svg/instagram.svg" alt="facebook">
                     </a>
-                    <a href="https://www.tiktok.com" target="_blank">
+                    <a href="https://www.tiktok.com/@harmonyconsulting6?_t=8nYFafENJsU&_r=1" target="_blank">
                          <img src="svg/tik-tok.svg" alt="facebook">
                     </a>
                     <a href="https://www.linkedin.com" target="_blank">
@@ -248,17 +252,11 @@
               header.classList.toggle("down", window.scrollY > 0);
           })
 
-          const form = document.querySelector(".contact_form");
-
-          form.addEventListener("submit", function(e){
-               e.preventDefault();
-               console.log(e);
-          })
 
           function just_number(e){
                var key = e.keyCode;
                
-               if(key > 47 && key < 58){
+               if((key > 47 && key < 58) || (key == 8 || key == 9)){
                     return true;
                }else{
                     return false;
